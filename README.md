@@ -1,8 +1,10 @@
 # Blog Next.js - Dự Án Blog Hiện Đại
 
+> Cập nhật: README đã được chỉnh sửa và commit lại.
+>
 Đây là một dự án blog được xây dựng bằng Next.js 16, sử dụng App Router và TypeScript để tạo ra một trang blog hiện đại, responsive với các tính năng đầy đủ.
 
-Link Deploy : https://blog-nextjs-pdwho338m-hoangr271-4925s-projects.vercel.app/
+Link Deploy : https://blog-nextjs-ten-nu.vercel.app/
 
 Tài liệu báo cáo: https://docs.google.com/document/d/1IB0Ctwb_ovAYnUYLzukI0UaWvHc2n_nZ10J51gA6v3w/edit?tab=t.0
 

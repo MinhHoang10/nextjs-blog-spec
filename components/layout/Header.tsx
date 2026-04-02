@@ -8,7 +8,7 @@ import Navigation from './Navigation'
 import { Search, Menu, X } from 'lucide-react'
 
 interface HeaderProps {
-  // Bạn có thể thêm các props như user profile nếu sau này làm login
+  
 }
 
 export default function Header({}: HeaderProps) {
