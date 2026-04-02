@@ -1,0 +1,8 @@
+export default function Loading() {
+  return (
+    <div className="py-24 text-center text-xl font-semibold">
+      Đang tải bài viết...
+    </div>
+  )
+}
+

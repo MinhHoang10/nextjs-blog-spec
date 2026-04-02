@@ -1,7 +1,6 @@
-// tailwind.config.ts
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
-const config: Config = {
+export default {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,11 +17,6 @@ const config: Config = {
           700: '#1d4ed8',
         },
       },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-      },
     },
   },
-  plugins: [],
-}
-export default config
+} satisfies Config;

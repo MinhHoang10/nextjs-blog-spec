@@ -1,11 +1,7 @@
-/* app/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   body {
-    /* Sử dụng màu xám rất nhạt cho nền và xám đậm cho chữ để giảm mỏi mắt */
     @apply bg-gray-50 text-gray-900;
   }
 
@@ -23,22 +19,18 @@
 }
 
 @layer components {
-  /* Định nghĩa khung chứa nội dung trung tâm */
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Nút bấm cơ bản */
   .btn {
     @apply px-4 py-2 rounded-md font-medium transition-colors inline-flex items-center justify-center;
   }
 
-  /* Nút bấm chủ đạo - Sử dụng bảng màu primary đã cấu hình ở bước trước */
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700;
+    @apply bg-blue-600 text-white hover:bg-blue-700;
   }
 
-  /* Thẻ nội dung trắng có đổ bóng nhẹ */
   .card {
     @apply bg-white rounded-lg shadow-md p-6;
   }

@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'picsum.photos' },
+      { protocol: 'https', hostname: 'api.dicebear.com' },
+      { protocol: 'https', hostname: 'localhost' },
+    ],
+    formats: ['image/avif', 'image/webp'],
+  },
+  turbopack: {
+    root: __dirname,
+  },
+  experimental: {
+    // Enable if needed (ví dụ: serverActions, typedRoutes...)
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = exports = nextConfig
