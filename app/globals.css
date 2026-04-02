@@ -1,26 +1,45 @@
-@import "tailwindcss";
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  body {
+    /* Sử dụng màu xám rất nhạt cho nền và xám đậm cho chữ để giảm mỏi mắt */
+    @apply bg-gray-50 text-gray-900;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  h1 {
+    @apply text-4xl font-bold mb-4;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h2 {
+    @apply text-3xl font-semibold mb-3;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold mb-2;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Định nghĩa khung chứa nội dung trung tâm */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Nút bấm cơ bản */
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors inline-flex items-center justify-center;
+  }
+
+  /* Nút bấm chủ đạo - Sử dụng bảng màu primary đã cấu hình ở bước trước */
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+
+  /* Thẻ nội dung trắng có đổ bóng nhẹ */
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
 }
