@@ -2,6 +2,8 @@
 
 Đây là một dự án blog được xây dựng bằng Next.js 16, sử dụng App Router và TypeScript để tạo ra một trang blog hiện đại, responsive với các tính năng đầy đủ.
 
+Link Deploy : https://blog-nextjs-pdwho338m-hoangr271-4925s-projects.vercel.app/
+
 ## ✨ Tính Năng
 
 - 🏠 **Trang chủ** với phần hero, bài viết nổi bật và newsletter
@@ -91,24 +93,6 @@ yarn start
 pnpm start
 ```
 
-## 📝 Sử Dụng
-
-### Thêm bài viết mới
-Chỉnh sửa file `data/posts.json` để thêm bài viết mới:
-
-```json
-{
-  "id": "bai-viet-moi",
-  "title": "Tiêu đề bài viết",
-  "content": "Nội dung bài viết...",
-  "excerpt": "Tóm tắt ngắn...",
-  "author": "Tên tác giả",
-  "category": "danh-muc",
-  "tags": ["tag1", "tag2"],
-  "date": "2024-01-01",
-  "readTime": 5
-}
-```
 
 ### Tùy chỉnh styling
 - Chỉnh sửa `app/globals.css` cho global styles
@@ -153,10 +137,8 @@ Dự án này sử dụng giấy phép MIT. Xem file `LICENSE` để biết thê
 
 ## 👨‍💻 Tác Giả
 
-**Nguyễn Huy Hoàng** - *Developer*
+**Nguyễn Huy Hoàng** 
 
-Liên hệ: [Email](mailto:your-email@example.com) | [LinkedIn](https://linkedin.com/in/your-profile)
+
 
 ---
-
-⭐ Nếu bạn thích dự án này, hãy cho nó một ngôi sao trên GitHub!
