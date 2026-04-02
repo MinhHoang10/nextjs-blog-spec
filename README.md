@@ -1,40 +1,162 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blog Next.js - Dự Án Blog Hiện Đại
 
-## Getting Started
+Đây là một dự án blog được xây dựng bằng Next.js 16, sử dụng App Router và TypeScript để tạo ra một trang blog hiện đại, responsive với các tính năng đầy đủ.
 
-First, run the development server:
+## ✨ Tính Năng
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🏠 **Trang chủ** với phần hero, bài viết nổi bật và newsletter
+- 📝 **Trang blog** với danh sách bài viết, tìm kiếm và lọc theo danh mục
+- 📄 **Trang bài viết chi tiết** với định tuyến động
+- 📞 **Trang liên hệ** với form liên hệ có validation
+- ℹ️ **Trang giới thiệu** với thông tin về tác giả
+- 🔍 **Tìm kiếm và lọc** bài viết theo danh mục
+- 📱 **Responsive design** hoàn toàn trên mọi thiết bị
+- ⚡ **Static Site Generation (SSG)** cho hiệu suất tối ưu
+- 🎨 **Tailwind CSS** cho styling hiện đại
+- 📧 **Form validation** với React Hook Form và Zod
+- 🔧 **TypeScript** cho type safety
+
+## 🚀 Công Nghệ Sử Dụng
+
+- **Next.js 16** - Framework React với App Router
+- **React 19** - Thư viện UI
+- **TypeScript** - Type safety
+- **Tailwind CSS v4** - CSS framework
+- **Lucide React** - Icon library
+- **React Hook Form** - Form handling
+- **Zod** - Schema validation
+- **clsx & tailwind-merge** - Utility functions
+
+## 📁 Cấu Trúc Dự Án
+
+```
+blog-nextjs/
+├── app/                    # Next.js App Router
+│   ├── (marketing)/       # Route groups
+│   ├── api/               # API routes
+│   ├── blog/              # Blog pages
+│   └── globals.css        # Global styles
+├── components/            # React components
+│   ├── blog/             # Blog components
+│   ├── forms/            # Form components
+│   ├── layout/           # Layout components
+│   └── ui/               # UI components
+├── data/                 # Static data
+├── lib/                  # Utilities
+├── public/               # Static assets
+└── types/                # TypeScript types
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Cài Đặt và Chạy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Yêu cầu hệ thống
+- Node.js 18+
+- npm hoặc yarn hoặc pnpm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Cài đặt dependencies
+```bash
+npm install
+# hoặc
+yarn install
+# hoặc
+pnpm install
+```
 
-## Learn More
+### Chạy development server
+```bash
+npm run dev
+# hoặc
+yarn dev
+# hoặc
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Mở [http://localhost:3000](http://localhost:3000) trong trình duyệt để xem kết quả.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Build cho production
+```bash
+npm run build
+# hoặc
+yarn build
+# hoặc
+pnpm build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Chạy production build
+```bash
+npm start
+# hoặc
+yarn start
+# hoặc
+pnpm start
+```
 
-## Deploy on Vercel
+## 📝 Sử Dụng
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Thêm bài viết mới
+Chỉnh sửa file `data/posts.json` để thêm bài viết mới:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# nextjs-blog-spec
->>>>>>> 47d573e16458b12e3422cc44cccdcc8863a344d5
+```json
+{
+  "id": "bai-viet-moi",
+  "title": "Tiêu đề bài viết",
+  "content": "Nội dung bài viết...",
+  "excerpt": "Tóm tắt ngắn...",
+  "author": "Tên tác giả",
+  "category": "danh-muc",
+  "tags": ["tag1", "tag2"],
+  "date": "2024-01-01",
+  "readTime": 5
+}
+```
+
+### Tùy chỉnh styling
+- Chỉnh sửa `app/globals.css` cho global styles
+- Sử dụng Tailwind classes trong components
+- Tùy chỉnh theme trong `tailwind.config.ts`
+
+### API Routes
+- `GET /api/posts` - Lấy danh sách bài viết
+- `POST /api/contact` - Gửi form liên hệ
+
+## 🚀 Triển Khai
+
+### Vercel (Khuyến nghị)
+1. Đẩy code lên GitHub
+2. Kết nối repository với [Vercel](https://vercel.com)
+3. Vercel sẽ tự động detect Next.js và deploy
+
+### Các nền tảng khác
+Dự án tương thích với bất kỳ nền tảng hosting nào hỗ trợ Next.js:
+- Netlify
+- Railway
+- DigitalOcean App Platform
+
+## 📚 Tài Liệu Tham Khảo
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+
+## 🤝 Đóng Góp
+
+1. Fork dự án
+2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Tạo Pull Request
+
+## 📄 Giấy Phép
+
+Dự án này sử dụng giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
+
+## 👨‍💻 Tác Giả
+
+**Nguyễn Huy Hoàng** - *Developer*
+
+Liên hệ: [Email](mailto:your-email@example.com) | [LinkedIn](https://linkedin.com/in/your-profile)
+
+---
+
+⭐ Nếu bạn thích dự án này, hãy cho nó một ngôi sao trên GitHub!
