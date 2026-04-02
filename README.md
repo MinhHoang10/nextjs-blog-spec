@@ -4,6 +4,8 @@
 
 Link Deploy : https://blog-nextjs-pdwho338m-hoangr271-4925s-projects.vercel.app/
 
+Tài liệu báo cáo: https://docs.google.com/document/d/1IB0Ctwb_ovAYnUYLzukI0UaWvHc2n_nZ10J51gA6v3w/edit?tab=t.0
+
 ## ✨ Tính Năng
 
 - 🏠 **Trang chủ** với phần hero, bài viết nổi bật và newsletter
